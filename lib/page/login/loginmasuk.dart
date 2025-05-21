@@ -41,6 +41,7 @@ class MasukPage extends StatelessWidget {
                     child: TextField(
                       decoration: const InputDecoration(
                         hintText: 'Nomor Hp atau Email',
+                        hintStyle: TextStyle(fontSize: 13, color: Colors.grey),
                         border: UnderlineInputBorder(),
                       ),
                     ),
@@ -64,6 +65,7 @@ class MasukPage extends StatelessWidget {
                     child: TextField(
                       decoration: const InputDecoration(
                         hintText: 'Kata Sandi',
+                        hintStyle: TextStyle(fontSize: 13, color: Colors.grey),
                         border: UnderlineInputBorder(),
                       ),
                     ),
@@ -98,17 +100,17 @@ class MasukPage extends StatelessWidget {
               children: [
                 Container(
                   width: 130,
-                  height: 2,
-                  color: Colors.black,
+                  height: 1,
+                  color: const Color.fromARGB(255, 110, 109, 109),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(right: 5.0, left: 5.0),
                   child: Text('atau masuk dengan'),
                 ),
                 Container(
-                  height: 2,
+                  height: 1,
                   width: 130,
-                  color: Colors.black,
+                  color: const Color.fromARGB(255, 110, 109, 109),
                 ),
               ],
             ),
@@ -134,7 +136,7 @@ class MasukPage extends StatelessWidget {
                       width: 40,
                     ),
                     SizedBox(
-                      width: 20,
+                      width: 5,
                     ),
                     Text('Google')
                   ],
@@ -156,12 +158,14 @@ class MasukPage extends StatelessWidget {
                   print('Tombol ditekan');
                 },
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset(
                       'asset/fb.png',
                       width: 30,
                     ),
-                    Text('Facebook, instagram')
+                    SizedBox(width: 7),
+                    Text('Facebook')
                   ],
                 ),
               ),
