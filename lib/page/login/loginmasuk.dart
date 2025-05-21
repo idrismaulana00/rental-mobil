@@ -161,7 +161,7 @@ class MasukPage extends StatelessWidget {
                       'asset/fb.png',
                       width: 30,
                     ),
-                    Text('Facebook')
+                    Text('Facebook, instagram')
                   ],
                 ),
               ),
