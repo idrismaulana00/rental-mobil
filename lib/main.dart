@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:rentalmobil/page/home/home.dart';
-import 'package:rentalmobil/page/login/loginmasuk.dart';
-import 'package:rentalmobil/page/login/register.dart';
+import 'package:rentalmobil/page/serch/serch.dart';
+import 'package:rentalmobil/page/serch/tanpasopir.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,6 +12,6 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        debugShowCheckedModeBanner: false, home: HomePage());
+        debugShowCheckedModeBanner: false, home: SerchPage());
   }
 }
